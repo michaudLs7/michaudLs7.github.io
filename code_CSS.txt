@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css');
+*{
+    margin: 0;
+    outline: none;
+    padding: 0;
+}
+body{
+    background-color: beige;
+}
+
+html{
+    font-family: "Roboto";
+    font-size: 16px;
+    color: black;
+    scroll-behavior: smooth;
+}
+header{
+    min-height: 100vh;
+    background:url(images/PXL_20250112_102704354.MP~3.jpg)top right;
+    background-size: cover;
+    display:flex;
+    align-items: center;
+    justify-content: right;
+}
+header>div{
+    width: 50%;
+    color: whitesmoke;
+}
+
+header>div>*{
+    margin-top: 1rem;
+}
+
+h1{
+    font-size: 4rem;
+}
+div.social a{
+    color: #bbb;
+    text-decoration: none;
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+div.social a:hover{
+    color:cyan;
+}
+div.social a span{
+    display: none;
+}
+header {
+    text-align: center;
+    padding: 1rem;
+    background-color: beige;
+}
+
+.social a {
+    text-decoration: none;
+    color: #2B3B2F;
+    margin: 0 0.5rem;
+}
+
+.social a span {
+    margin-left: 0.5rem;
+}
+
+/* Navigation */
+.nav-links {
+    position: fixed; 
+    top: 0;
+    left: 0; 
+    width: 100%; 
+    z-index: 1000;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+}
+
+.nav-brand {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+nav{
+    background-color : rgba(190 , 245 , 116,0.5);
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu li {
+    margin: 0 0.5rem;
+}
+
+.nav-menu a {
+    color: #2B3B2F;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: block;
+}
+
+/* Partie ajoutée pour le menu burger */
+.menu-toggle {
+    display: none; /* Le checkbox du menu burger est caché */
+}
+
+.menu-icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none; /* L'icône est masquée sur les grands écrans */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block; /* Affiche l'icône du menu burger */
+    }
+
+    .menu-toggle:checked + .menu-icon + .nav-menu {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color:#5FAB66;
+        position: absolute;
+        top: 60px;
+        left: 0;
+    }
+
+    .nav-menu {
+        display: none; /* Cache le menu par défaut */
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .nav-menu li {
+        margin: 0;
+    }
+
+    .nav-menu a {
+        padding: 1rem;
+        border-bottom: 1px solid #444; /* Séparateurs entre les liens */
+    }
+}
+main section{
+    box-sizing: border-box;
+    
+    padding:4rem;
+}
+
+section h2{
+
+    width: 100%;
+    padding:1rem;
+    color:rgb(4, 71, 0);
+    background: rgba(190 , 245 , 116,0.2);
+    text-align: center;
+    border-radius: 40px;
+}
+
+div.social-links a span{
+    display: none;
+}
+div.social-links a{
+    color: #bbb;
+    text-decoration: none;
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+div.social-links a:hover{
+    color:cyan;
+}
+nav a:hover {
+    color: cyan;
+    background-color: #007BFF; 
+}
+nav a span{
+    display: none;
+}
+#galerie {
+    display: flex; 
+    justify-content: space-around; 
+    padding: 30px;
+    flex-wrap: wrap; 
+    gap: 20px;
+}
+.image {
+    width: 150px; 
+    height: 150px;
+    background-size: cover; 
+    background-position: center; 
+    border: 2px solid #01643e;
+    border-radius: 40px; 
+}
+.image:hover {
+    transform: scale(1.05);
+}
+
+
+#image1 {
+    background-image: url(images/Réseaux.png); 
+}
+#image2 {
+    background-image: url(images/programmation.png);
+}
+#image3 {
+    background-image: url(images/télécommunication.png);
+}
+#image4 {
+    background-image: url(images/IUT.png);
+}
+#image5 {
+    background-image: url(images/JDL3.png);
+}
+#image6 {
+    background-image: url(images/labojalpng.png);
+}
+#image7 {
+    background-image: url(images/avenir_mu.png);
+}
+#image8 {
+    background-image: url(images/judo_c.png);
+}
+.grandes_images {
+    background-size: cover; 
+    background-position: center;
+    align-items: center; 
+    border: 2px solid #01643e;
+    border-radius: 40px;
+    width: 500px; 
+    height: 200px; 
+}
+.photo-section {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+#liste_comp {
+    display: flex; 
+    justify-content: space-around; 
+    padding: 20px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+#liste_comp ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 30%; 
+    min-width: 250px;
+    text-align: left;
+}
+
+#liste_comp li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #333;
+}
+
+#liste_comp progress {
+    width: 100%;
+    margin: 10px 0;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#liste_comp progress::-webkit-progress-bar {
+    background-color: #f3f3f3;
+}
+
+#liste_comp progress::-webkit-progress-value {
+    background-color: #01643e;
+}
+
+#liste_comp progress::-moz-progress-bar {
+    background-color: #01643e;
+}
+
+#liste_comp span {
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-left: 5px;
+}
+.case{
+    background-color: rgb(245, 245, 232); 
+    border: 2px solid burlywood;
+    border-radius: 10px;
+    padding: 20px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    max-width: 2000px; 
+    margin: 20px; 
+    line-height: 1.6; 
+}
+.cv-section {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 5vh;
+}
+.download-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: white;
+    color: #01643e;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    margin: 20px;
+    background-position: left;
+
+}
+
+.download-button:hover {
+    background-color: burlywood;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
