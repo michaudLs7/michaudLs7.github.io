@@ -17,7 +17,7 @@ html{
 }
 header{
     min-height: 100vh;
-    background:url(images/PXL_20250112_102704354.MP~3.jpg) top left;
+    background:url(PXL_20250112_102704354.MP~3.jpg) top left;
     background-size: cover;
     display:flex;
     align-items: center;
