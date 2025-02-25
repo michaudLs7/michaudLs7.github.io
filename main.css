@@ -203,28 +203,28 @@ nav a span{
 
 
 #image1 {
-    background-image: url(images/Réseaux.png); 
+    background-image: url(Réseaux.png); 
 }
 #image2 {
-    background-image: url(images/programmation.png);
+    background-image: url(programmation.png);
 }
 #image3 {
-    background-image: url(images/télécommunication.png);
+    background-image: url(télécommunication.png);
 }
 #image4 {
-    background-image: url(images/IUT.png);
+    background-image: url(IUT.png);
 }
 #image5 {
-    background-image: url(images/JDL3.png);
+    background-image: url(JDL3.png);
 }
 #image6 {
-    background-image: url(images/labojalpng.png);
+    background-image: url(labojalpng.png);
 }
 #image7 {
-    background-image: url(images/avenir_mu.png);
+    background-image: url(avenir_mu.png);
 }
 #image8 {
-    background-image: url(images/judo_c.png);
+    background-image: url(judo_c.png);
 }
 .grandes_images {
     background-size: cover; 
